@@ -16,6 +16,24 @@
 
 // }
 
+/*
+#include <iostream>
+
+void countSort(int upperBound, int lowerBound, std::vector<int> numbersToSort) //lower and upper bounds of numbers in vector
+{
+  int range = upperBound - lowerBound;                  //create a range large enough to get every number between the min and max
+  std::vector<int> counts (range);                      //initialize of counts of the size of the range
+  std::fill(counts.begin(), counts.end(), 0);           //fill vector of zeros
+  
+  for (int i = 0; i < numbersToSort.size(); i++)
+  {
+      int index = numbersToSort[i] - lowerBound; //For example, if 5 is the lower bound and numbersToSort[i] is 5. index will be 0 and the       counts[index]+= 1;                         //count of 5 will be stored in counts[0]
+  }
+  
+  std::cout << counts << std::endl;
+} 
+*/
+
 // For simplicity, consider the data in the range 0 to 9. 
 // Input data: 1, 4, 1, 2, 7, 5, 2
 //   1) Take a count array to store the count of each unique object.
